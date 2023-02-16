@@ -1,11 +1,20 @@
 package warmup;
 
 import java.util.HashSet;
-import java.util.Set;
 
 public class CheckDuplicate {
-    public boolean containsDuplicate(int[] nums) { 
-        
+
+    private int[] array;
+
+    public CheckDuplicate(int[] array){
+        this.array = array;
+    }
+
+    public boolean containsDuplicate() { 
+        HashSet<Integer> numberSet = new HashSet<>();
+        for(int i : array){
+            if(!numberSet.add(i)) return true;
+        }
         return false;
     }
 }
