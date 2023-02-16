@@ -5,9 +5,10 @@ public class MainExecute{
 
     private static String[] PROGRAMS = {
         "Find a pair that matches the target sum. ",
-        "Check if an array has duplicates", 
+        "Check if an array has duplicates",
+        "Check if string is a panagram",
+        "Get Square Root of x rounded to the nearest integer",
     };
-
 
     public static void main(String[] args){
         System.out.println("Select the following programs to run: ");
@@ -21,6 +22,9 @@ public class MainExecute{
         switch(choice){
             case 1: Test.testPairSum(); break;
             case 2: Test.testDuplicate(); break;
+            case 3: Test.testPangram(); break;
+            case 4: Test.testSqrt(); break;
+            default: System.out.println("No valid program selected");
         }
         userInput.close();
     }
