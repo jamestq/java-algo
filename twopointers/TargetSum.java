@@ -26,6 +26,8 @@ public class TargetSum{
         int sum = 0;
         
         //print array
+        System.out.println("Target sum is: " + this.target);
+        System.out.print("Array for checking: ");
         System.out.print("[ ");
         for(int i : sortedArray){
             System.out.print(i + " ");
@@ -33,17 +35,20 @@ public class TargetSum{
         System.out.println("]");
 
         //Checks pairs
-        while(startPointer != endPointer){
-            System.out.println("current pair: ["+sortedArray[startPointer] + "," + sortedArray[endPointer] + "]");
+        do{
             sum = sortedArray[startPointer] + sortedArray[endPointer];
-            if(sum > this.target){
-                endPointer--;
-            }else if(sum < this.target){
-                startPointer++;
-            }else{
+            if(sum==this.target){
                 return "Found pair! [" + sortedArray[startPointer] + "," + sortedArray[endPointer] + "]" ;
+            }else{
+                System.out.println("current pair: ["+sortedArray[startPointer] + "," + sortedArray[endPointer] + "]");
+                if(sum > this.target){
+                    endPointer--;
+                }else{
+                    startPointer++;
+                }
+
             }
-        }
+        }while(startPointer!=endPointer);
 
         return "No pair was found that match the target: " + this.target;
     }
