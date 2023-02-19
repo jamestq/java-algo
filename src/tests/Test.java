@@ -47,6 +47,15 @@ public class Test{
         System.out.println(newPalindrome.checkPalindrome());
     }
 
+    public static void checkAnagram(){
+        System.out.print("Enter String: ");
+        String input = userInput.nextLine();
+        System.out.print("Enter check String: ");
+        String checkString = userInput.nextLine();
+        CheckAnagram newAnagram = new CheckAnagram(input, checkString);
+        System.out.println(newAnagram.checkAnagram());
+    }
+
     public static int[] createArray(int arraySize){
         int[] array = new int[arraySize];
         for(int i=0; i<arraySize; i++){

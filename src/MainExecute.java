@@ -9,7 +9,8 @@ public class MainExecute{
         "Check if string is a panagram",
         "Get Square Root of x rounded to the nearest integer",
         "Reverse the vowels in a string",
-        "Check is a String is a palindrome"
+        "Check is a String is a palindrome",
+        "Check is two strings are anagram of each other"
     };
 
     public static void main(String[] args){
@@ -28,6 +29,7 @@ public class MainExecute{
             case 4: Test.testSqrt(); break;
             case 5: Test.checkReverseVowel(); break;
             case 6: Test.checkPalindrome(); break;
+            case 7: Test.checkAnagram(); break;
             default: System.out.println("No valid program selected");
         }
         userInput.close();
