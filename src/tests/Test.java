@@ -35,6 +35,12 @@ public class Test{
         System.out.println(newSqrt.mySqrt());
     }
 
+    public static void checkReverseVowel(){
+        System.out.print("Enter String: ");
+        ReverseVowels newRevseVowels = new ReverseVowels(userInput.nextLine());
+        System.out.println(newRevseVowels.reverseVowels());
+    }
+
     public static int[] createArray(int arraySize){
         int[] array = new int[arraySize];
         for(int i=0; i<arraySize; i++){
