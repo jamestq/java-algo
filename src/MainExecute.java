@@ -8,7 +8,8 @@ public class MainExecute{
         "Check if an array has duplicates",
         "Check if string is a panagram",
         "Get Square Root of x rounded to the nearest integer",
-        "Reverse the vowels in a string"
+        "Reverse the vowels in a string",
+        "Check is a String is a palindrome"
     };
 
     public static void main(String[] args){
@@ -26,6 +27,7 @@ public class MainExecute{
             case 3: Test.testPangram(); break;
             case 4: Test.testSqrt(); break;
             case 5: Test.checkReverseVowel(); break;
+            case 6: Test.checkPalindrome(); break;
             default: System.out.println("No valid program selected");
         }
         userInput.close();

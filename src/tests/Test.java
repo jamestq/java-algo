@@ -41,6 +41,12 @@ public class Test{
         System.out.println(newRevseVowels.reverseVowels());
     }
 
+    public static void checkPalindrome(){
+        System.out.print("Enter String: ");
+        CheckPalindrome newPalindrome = new CheckPalindrome(userInput.nextLine());
+        System.out.println(newPalindrome.checkPalindrome());
+    }
+
     public static int[] createArray(int arraySize){
         int[] array = new int[arraySize];
         for(int i=0; i<arraySize; i++){
