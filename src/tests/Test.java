@@ -56,11 +56,62 @@ public class Test{
         System.out.println(newAnagram.checkAnagram());
     }
 
+    public static void checkShortestDistance(){
+        System.out.print("Enter array size: ");
+        String[] words = createStringArray(Integer.parseInt(userInput.nextLine()));
+        System.out.print("Enter word1: ");
+        String word1 = userInput.nextLine();
+        System.out.print("Enter word2: ");
+        String word2 = userInput.nextLine();
+        WordDistance distance = new WordDistance(words, word1, word2);
+        System.out.println(distance.shortestDistance());
+    }
+
+    public static void checkGoodPair(){
+        System.out.print("Enter array size: ");
+        int[] nums = createArray(Integer.parseInt(userInput.nextLine()));
+        GoodPair pairs = new GoodPair(nums);
+        System.out.println(pairs.numGoodPairs());
+    }
+
+    public static void checkRemoveDuplicate(){
+        System.out.print("Enter array size: ");
+        int[] nums = createArray(Integer.parseInt(userInput.nextLine()));
+        RemoveDuplicate duplicate = new RemoveDuplicate(nums);
+        System.out.println(duplicate.remove());
+    }
+
+    public static void checkSquareArray(){
+        System.out.print("Enter array size: ");
+        int[] nums = createArray(Integer.parseInt(userInput.nextLine()));
+        int[] squares = (new SquareArray(nums)).makeSquares();
+        for(int square : squares){
+            System.out.print(square + " ");
+        }
+        System.out.println();
+    }
+
+    public static void checkTripletSum(){
+        System.out.print("Enter array size: ");
+        int[] nums = createArray(Integer.parseInt(userInput.nextLine()));
+        TripletZeroSum tripletSum = new TripletZeroSum(nums);
+        System.out.println(tripletSum.searchTriplets());
+    }
+
     public static int[] createArray(int arraySize){
         int[] array = new int[arraySize];
         for(int i=0; i<arraySize; i++){
             System.out.printf("Enter value for array element %d: ", (i+1));
             array[i] = Integer.parseInt(userInput.nextLine());
+        }
+        return array;
+    }
+
+    public static String[] createStringArray(int arraySize){
+        String[] array = new String[arraySize];
+        for(int i=0; i<arraySize; i++){
+            System.out.printf("Enter string for array element %d: ", (i+1));
+            array[i] = userInput.nextLine();
         }
         return array;
     }
