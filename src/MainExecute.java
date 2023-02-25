@@ -16,7 +16,8 @@ public class MainExecute{
         "Remove duplicates from an array of numbers",
         "Square a sorted array",
         "Find triplets from an array that sums to zero",
-        "Find triplet with sum closest to target"
+        "Find triplet with sum closest to target",
+        "Find triplet with sum less than target",
     };
 
     public static void main(String[] args){
@@ -41,6 +42,8 @@ public class MainExecute{
             case 10: Test.checkRemoveDuplicate(); break;
             case 11: Test.checkSquareArray(); break;
             case 12: Test.checkTripletSum(); break;
+            case 13: Test.checkTargetTripletSum(); break;
+            case 14: Test.checkSmallerTripletSum(); break;
             default: System.out.println("No valid program selected");
         }
         userInput.close();

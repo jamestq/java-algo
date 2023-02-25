@@ -98,6 +98,24 @@ public class Test{
         System.out.println(tripletSum.searchTriplets());
     }
 
+    public static void checkTargetTripletSum(){
+        System.out.print("Enter array size: ");
+        int[] nums = createArray(Integer.parseInt(userInput.nextLine()));
+        System.out.print("Enter target sum: ");
+        int target = Integer.parseInt(userInput.nextLine());
+        TripletTargetSum tripletSum = new TripletTargetSum(nums, target);
+        System.out.println(tripletSum.searchTriplet());
+    }
+
+    public static void checkSmallerTripletSum(){
+        System.out.print("Enter array size: ");
+        int[] nums = createArray(Integer.parseInt(userInput.nextLine()));
+        System.out.print("Enter target sum: ");
+        int target = Integer.parseInt(userInput.nextLine());
+        TripletSmallerSum tripletSum = new TripletSmallerSum(nums, target);
+        System.out.println(tripletSum.searchTriplet());
+    }
+
     public static int[] createArray(int arraySize){
         int[] array = new int[arraySize];
         for(int i=0; i<arraySize; i++){
