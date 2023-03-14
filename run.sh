@@ -1,2 +1,2 @@
-javac -d build src/*.java src/*/*.java
-java -cp build MainExecute
+javac -d bin src/*.java src/*/*.java
+java -cp bin MainExecute
