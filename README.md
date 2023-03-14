@@ -10,7 +10,6 @@ This program was compiled and run with the following version:
 
 ```
 java -jar java-algo.jar
-
 ```
 
 **Manual Build**
