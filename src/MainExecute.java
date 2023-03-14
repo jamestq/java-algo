@@ -18,6 +18,7 @@ public class MainExecute{
         "Find triplets from an array that sums to zero",
         "Find triplet with sum closest to target",
         "Find triplet with sum less than target",
+        "Find continguous sub arrays with product smaller than target",
     };
 
     public static void main(String[] args){
@@ -44,6 +45,7 @@ public class MainExecute{
             case 12: Test.checkTripletSum(); break;
             case 13: Test.checkTargetTripletSum(); break;
             case 14: Test.checkSmallerTripletSum(); break;
+            case 15: Test.checkSmallerProduct(); break;
             default: System.out.println("No valid program selected");
         }
         userInput.close();

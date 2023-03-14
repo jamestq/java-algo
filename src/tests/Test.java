@@ -116,6 +116,15 @@ public class Test{
         System.out.println(tripletSum.searchTriplet());
     }
 
+    public static void checkSmallerProduct(){
+        System.out.print("Enter array size: ");
+        int[] nums = createArray(Integer.parseInt(userInput.nextLine()));
+        System.out.print("Enter target sum: ");
+        int target = Integer.parseInt(userInput.nextLine());
+        SmallerProduct smallerProduct = new SmallerProduct(nums, target);
+        System.out.println(smallerProduct.searchSub());
+    }
+
     public static int[] createArray(int arraySize){
         int[] array = new int[arraySize];
         for(int i=0; i<arraySize; i++){
