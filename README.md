@@ -6,10 +6,20 @@ This program was compiled and run with the following version:
 - openjdk 19.0.1 2022-10-18
 - javac 19.0.1
 
+**Run Jar File**
+
+```
+java -jar java-algo.jar
+
+```
+
+**Manual Build**
+
 ```
 git clone https://github.com/jamestq/java-algo.git
 bash run.sh
 ```
+
 
 ## List of programs
 
@@ -25,4 +35,7 @@ bash run.sh
 10. Given an array of sorted numbers, remove all duplicate numbers - **RemoveDuplicate.java**
 11. Given an array of sorted numbers, square them and return the sorted array of those squared numbers. - **SquareArray.java**
 12. Given an array of numbers, find all unique triplets that add up to zero - **TripleZeroSum.java** 
+13. Given an array of numbers, find a triplet with sum closest to the target number **TripletTargetSum.java**
+14. Given an array of numbers, find a triplet with sum less than the target number **TripletSmallerSum.java**
+15. Find contiguous sub arrays with product smaller than the target number **SmallerProduct.java**
 
